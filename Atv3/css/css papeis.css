@@ -1,0 +1,108 @@
+#container {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: "a1 a1 a1 a1"
+        "a1 a1 a1 a1"
+        "a2 a3 a4 a5"
+        "a2 a3 a4 a5"
+        "a6 a7 a8 a9"
+        "a6 a7 a8 a9"
+        "a10 empty empty empty"
+        "a11 empty empty empty";
+    background-color: lightcyan;
+    border-color: lightcyan;
+}
+
+#cor{
+    background-color: lightcyan;
+}
+
+#a1 {
+    grid-area: a1;
+    font-family: cursive;
+    font-size: 70px;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+#a2 {
+    grid-area: a2;
+}
+
+#a3 {
+    grid-area: a3;
+}
+
+#a4 {
+    grid-area: a4;
+}
+
+#a5 {
+    grid-area: a5;
+}
+
+#a6 {
+    grid-area: a6;
+}
+
+#a7 {
+    grid-area: a7;
+}
+
+#a8 {
+    grid-area: a8;
+}
+
+#a9 {
+    grid-area: a9;
+}
+
+#a10 {
+    grid-area: a10;
+}
+
+#a11 {
+    grid-area: a11;
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 50px 100px 100px 100px 100px;
+        grid-template-areas: "a1"
+            "a1"
+            "a2"
+            "a3"
+            "a4";
+    }
+
+    #a1 {
+        grid-area: a1;
+        font-family: cursive;
+        text-align: center;
+        text-align: justify;
+    }
+
+    #a2 {
+        visibility: hidden;
+    }
+
+    #a3 {
+        grid-area: a3;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    #a4 {
+        grid-area: a4;
+        text-align: justify;
+    }
+
+    #a5 {
+        grid-area: a5;
+    }
+
+
+}
